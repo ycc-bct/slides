@@ -1,0 +1,11 @@
+{
+  "name": "slides-pptx-export",
+  "private": true,
+  "description": "Builds an editable PowerPoint version of the decks for people who work in PowerPoint.",
+  "scripts": {
+    "build": "node build-ai-recruiting.js && python3 finalize.py \"AI智慧招募自動化.pptx\""
+  },
+  "dependencies": {
+    "pptxgenjs": "^4.0.1"
+  }
+}

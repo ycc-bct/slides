@@ -30,6 +30,26 @@ pnpm dev
 | --- | --- | --- |
 | `slides/ai-recruiting` | AI 智慧招募自動化 | 10 |
 
+## PowerPoint 版
+
+給習慣用 PowerPoint 的同事：[`pptx/AI智慧招募自動化.pptx`](pptx/AI智慧招募自動化.pptx)。
+
+- 所有文字、卡片、表格都是原生物件，可以直接點選修改。
+- 「常用 › 新增投影片」有四種版面：封面、內容頁、內容頁（含文字區）、結尾。新頁面會自動套用深色背景、標題位置與字型。
+- 佈景主題色彩已換成簡報的配色，選顏色時優先用「佈景主題色彩」那一排。
+- 中文與英文用微軟正黑體，大數字用 Century Gothic，標籤用 Consolas。這三套字型在裝有 Office 的 Windows 與 Mac 上都有。
+- 如果新頁面沒有頁碼，到「插入 › 頁首及頁尾」勾選「投影片編號」。
+
+PPT 版和網頁版是兩份獨立的檔案，改其中一份不會同步到另一份。
+
+重新產生 PPT：
+
+```bash
+cd pptx
+npm install
+npm run build
+```
+
 ## 目錄
 
 | 路徑 | 用途 |
@@ -38,6 +58,7 @@ pnpm dev
 | `assets/logos/` | 跨簡報共用的 logo，以 `@assets/logos/...` 匯入 |
 | `assets/logos/source/` | 客戶提供的原始 logo 檔 |
 | `themes/` | 可重複套用的主題說明 |
+| `pptx/` | 可編輯的 PowerPoint 版與產生腳本 |
 | `legacy/` | 改用 open-slide 前的單檔 HTML 版與 PDF |
 | `.agents/skills/` | open-slide 提供給 AI 代理的寫作規範，由 `pnpm sync:skills` 管理 |
 
