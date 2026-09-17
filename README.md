@@ -1,5 +1,7 @@
 # slides
 
+> **已搬遷**：本 repo 已封存，後續簡報與更新都在私人 repo `BCT-TPE/slide-kit`。
+
 以 [open-slide](https://github.com/1weiho/open-slide) 製作的簡報工作區。每份簡報是 `slides/<id>/index.tsx` 裡的一組 React 頁面，畫布固定 1920 × 1080。
 
 ## 線上預覽
